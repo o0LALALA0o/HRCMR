@@ -1,0 +1,396 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2095DA4-D886-4E7B-B5FE-C8500B8EE5CD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRCMR</RootNamespace>
+    <AssemblyName>HRCMR</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-datepicker.css" />
+    <Content Include="css\bootstrap-datepicker3.min.css" />
+    <Content Include="css\bootstrap-responsive.min.css" />
+    <Content Include="css\bootstrap-table.css" />
+    <Content Include="css\bootstrap-wysihtml5.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrapValidator.css" />
+    <Content Include="css\bootstrapValidator.min.css" />
+    <Content Include="css\circle.css" />
+    <Content Include="css\colorpicker.css" />
+    <Content Include="css\datepicker.css" />
+    <Content Include="css\fileinput.css" />
+    <Content Include="css\fullcalendar.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\jquery.gritter.css" />
+    <Content Include="css\matrix-login.css" />
+    <Content Include="css\matrix-media.css" />
+    <Content Include="css\matrix-style.css" />
+    <Content Include="css\select2.css" />
+    <Content Include="css\uniform.css" />
+    <Content Include="font-awesome\css\font-awesome.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\123.png" />
+    <Content Include="img\alpha.html" />
+    <Content Include="img\breadcrumb.png" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.html" />
+    <Content Include="img\gritter.png" />
+    <Content Include="img\hue.png" />
+    <Content Include="img\larrow.png" />
+    <Content Include="img\line.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\menu-active.png" />
+    <Content Include="img\rarrow.png" />
+    <Content Include="img\saturation.png" />
+    <Content Include="img\select2.png" />
+    <Content Include="img\spinner.gif" />
+    <Content Include="img\sprite.png" />
+    <Content Include="js\bootstrap-colorpicker.js" />
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap-datepicker.min.js" />
+    <Content Include="js\bootstrap-datepicker.zh-CN.js" />
+    <Content Include="js\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="js\bootstrap-table-zh-CN.js" />
+    <Content Include="js\bootstrap-table.js" />
+    <Content Include="js\bootstrap-table.min.js" />
+    <Content Include="js\bootstrap-wysihtml5.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\bootstrapValidator.js" />
+    <Content Include="js\bootstrapValidator.min.js" />
+    <Content Include="js\excanvas.min.js" />
+    <Content Include="js\fileinput.min.js" />
+    <Content Include="js\fileinput_locale_zh.js" />
+    <Content Include="js\fullcalendar.min.js" />
+    <Content Include="js\index.js" />
+    <Content Include="js\jquery.dataTables.min.js" />
+    <Content Include="js\jquery.flot.min.js" />
+    <Content Include="js\jquery.flot.pie.min.js" />
+    <Content Include="js\jquery.flot.resize.min.js" />
+    <Content Include="js\jquery.gritter.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.peity.min.js" />
+    <Content Include="js\jquery.toggle.buttons.html" />
+    <Content Include="js\jquery.ui.custom.js" />
+    <Content Include="js\jquery.uniform.js" />
+    <Content Include="js\jquery.validate.js" />
+    <Content Include="js\jquery.wizard.js" />
+    <Content Include="js\maruti.html" />
+    <Content Include="js\masked.js" />
+    <Content Include="js\matrix.calendar.js" />
+    <Content Include="js\matrix.charts.js" />
+    <Content Include="js\matrix.chat.js" />
+    <Content Include="js\matrix.dashboard.js" />
+    <Content Include="js\matrix.form_common.js" />
+    <Content Include="js\matrix.form_validation.js" />
+    <Content Include="js\matrix.interface.js" />
+    <Content Include="js\matrix.js" />
+    <Content Include="js\matrix.login.js" />
+    <Content Include="js\matrix.popover.js" />
+    <Content Include="js\matrix.tables.js" />
+    <Content Include="js\matrix.wizard.js" />
+    <Content Include="js\schedule.js" />
+    <Content Include="js\select2.min.js" />
+    <Content Include="js\wysihtml5-0.3.0.js" />
+    <Content Include="js\zh_CN.js" />
+    <Content Include="leaveApplication.aspx" />
+    <Content Include="leaveAudit.aspx" />
+    <Content Include="leaveLoc.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="monthAttendanceSheet.aspx" />
+    <Content Include="MyUserInfoManage.aspx" />
+    <Content Include="Scripts\bootstrap-table-export.js" />
+    <Content Include="Scripts\bootstrap-table-export.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="img\圆角矩形 1.png" />
+    <Content Include="img\圆角矩形 2 拷贝.png" />
+    <Content Include="img\圆角矩形 2.png" />
+    <Content Include="Handler\UserInfo.ashx" />
+    <Content Include="img\Descr.WD3" />
+    <Content Include="font-awesome\css\Descr.WD3" />
+    <Content Include="font-awesome\font\Descr.WD3" />
+    <Content Include="font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="font-awesome\font\fontawesome-webfont.eot%40" />
+    <Content Include="font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="Handler\Department.ashx" />
+    <Content Include="Scripts\es6-promise.auto.min.js" />
+    <Content Include="Scripts\fileinput.js" />
+    <Content Include="Scripts\FileSaver.min.js" />
+    <Content Include="Scripts\html2canvas.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery.base64.js" />
+    <Content Include="Scripts\jspdf.min.js" />
+    <Content Include="Scripts\jspdf.plugin.autotable.js" />
+    <Content Include="Scripts\tableExport.js" />
+    <Content Include="Department.aspx" />
+    <Content Include="Scripts\tableExport.min.js" />
+    <Content Include="Scripts\toastr.css" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Scripts\xlsx.core.min.js" />
+    <Content Include="selectColleague.aspx" />
+    <Content Include="selectPaySlip.aspx" />
+    <Content Include="signin.aspx" />
+    <Content Include="UserInfoManage.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Handler\FileUploadHandler.ashx" />
+    <Content Include="Handler\Leave.ashx" />
+    <Content Include="Handler\CategoryItems.ashx" />
+    <Content Include="Handler\OvertineCheck.ashx" />
+    <Content Include="Handler\AttendanceSheet.ashx" />
+    <Content Include="Handler\PaySlip.ashx" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Handler\AttendanceSheet.ashx.cs">
+      <DependentUpon>AttendanceSheet.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CategoryItems.ashx.cs">
+      <DependentUpon>CategoryItems.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Department.ashx.cs">
+      <DependentUpon>Department.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\FileUploadHandler.ashx.cs">
+      <DependentUpon>FileUploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Leave.ashx.cs">
+      <DependentUpon>Leave.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\OvertineCheck.ashx.cs">
+      <DependentUpon>OvertineCheck.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\PaySlip.ashx.cs">
+      <DependentUpon>PaySlip.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UserInfo.ashx.cs">
+      <DependentUpon>UserInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="leaveApplication.aspx.cs">
+      <DependentUpon>leaveApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="leaveApplication.aspx.designer.cs">
+      <DependentUpon>leaveApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="leaveAudit.aspx.cs">
+      <DependentUpon>leaveAudit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="leaveAudit.aspx.designer.cs">
+      <DependentUpon>leaveAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="leaveLoc.aspx.cs">
+      <DependentUpon>leaveLoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="leaveLoc.aspx.designer.cs">
+      <DependentUpon>leaveLoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="monthAttendanceSheet.aspx.cs">
+      <DependentUpon>monthAttendanceSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="monthAttendanceSheet.aspx.designer.cs">
+      <DependentUpon>monthAttendanceSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserInfoManage.aspx.cs">
+      <DependentUpon>MyUserInfoManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyUserInfoManage.aspx.designer.cs">
+      <DependentUpon>MyUserInfoManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Department.aspx.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department.aspx.designer.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="selectColleague.aspx.cs">
+      <DependentUpon>selectColleague.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="selectColleague.aspx.designer.cs">
+      <DependentUpon>selectColleague.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="selectPaySlip.aspx.cs">
+      <DependentUpon>selectPaySlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="selectPaySlip.aspx.designer.cs">
+      <DependentUpon>selectPaySlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signin.aspx.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signin.aspx.designer.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoManage.aspx.cs">
+      <DependentUpon>UserInfoManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfoManage.aspx.designer.cs">
+      <DependentUpon>UserInfoManage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{1590aed2-ae93-45e7-a593-a8cbd7ed925a}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.csproj">
+      <Project>{9717cef4-46be-42b8-848a-917d92864536}</Project>
+      <Name>MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\FileUpload\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56091</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56091/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
